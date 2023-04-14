@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="ISO-8859-1">
+        <title>Hospital Management Application</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+            }
+            #header {
+                background-color: #333;
+                color: white;
+                padding: 20px;
+                font-size: 28px;
+                text-align: center;
+            }
+            .button-grid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 50px;
+            }
+            .button {
+                background-color: #428bca;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin: 10px;
+                transition: background-color 0.3s ease-in-out;
+            }
+            .button:hover {
+                background-color: #2b669a;
+            }
+        </style>
+    <script>
+        function fun(link) {
+            window.location = link;
+        }
+    </script>
+</head>
+<body>
+    <div id="header">
+        Hospital Management Application
+    </div>
+    <div class="button-grid">
+        <button class="button" type="button" onclick="fun('login.html')">Login</button>
+        <button class="button" type="button" onclick="fun('newAssistant.html')">New Account</button>
+    </div>
+</body>
+</html>

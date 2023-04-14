@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="ISO-8859-1">
+        <title>NEW PATIENT</title>
+        <script>
+        </script>
+        <style>
+            body {
+                background-color: #F2F2F2;
+            }
+
+            h2 {
+                font-family: Arial, sans-serif;
+                font-size: 36px;
+                margin-top: 30px;
+            }
+
+            form {
+                max-width: 500px;
+                margin: 0 auto;
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 20px;
+                box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+            }
+
+            h2 {
+                text-align: center;
+                color: #428bca;
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+                font-size: 18px;
+                color: #666;
+            }
+
+            input[type="text"],
+            input[type="number"],
+            select {
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                border: none;
+                border-bottom: 2px solid #428bca;
+                margin-bottom: 20px;
+            }
+
+            input[type="email"] {
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                border: none;
+                border-bottom: 2px solid #428bca;
+                margin-bottom: 20px;
+            }
+
+            input[type="submit"] {
+                background-color: #428bca;
+                color: #fff;
+                border: none;
+                border-radius: 3px;
+                padding: 10px 20px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #2b669a;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h2 align=center >ADD NEW PATIENT</h2>
+        <form align="center" id="addDoc" method="POST" action="CreatePatient">
+            <input type="text" name="name" placeholder="NAME"><br>
+            <input type="email" name="email" placeholder="EMAIL"><br>
+            <input type="number" name="phone" placeholder="PHONE"><br>
+            <input type="number" name="age" placeholder="AGE"><br>
+            <select name="gender">
+                <option value="male">MALE</option>
+                <option value="female">FEMALE</option>
+                <option value="other">OTHER</option>
+            </select><br>
+            <input type="text" name="blood" placeholder="BLOOD TYPE"><br>
+            <input type="text" name="symptom" placeholder="SYMPTOMS"><br>
+            <input type="text" name="disease" placeholder="DISEASE DIAGNOSED"><br>
+            <input type="text" name="doctor" placeholder="DOCTOR REFFERED TO"><br>
+            <input type="submit" value="ADD PATIENT">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="ISO-8859-1">
+        <title>SHOW ALL MEDICINES</title>
+        <style>
+            body {
+                background-color: #f7f7f7;
+                font-family: Arial, sans-serif;
+            }
+
+            h2 {
+                text-align: center;
+                color: #428bca;
+                font-size: 36px;
+                margin-bottom: 20px;
+                align-self: center;
+            }
+
+            button {
+                margin-left: 0px;
+                color: white;
+                background-color: #428bca;
+                padding: 14px 16px;
+                text-decoration: none;
+                border: none;
+                border-radius: 3px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #2b669a;
+            }
+
+            table {
+                font-family: Arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+                margin: 0 auto;
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 20px;
+                box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+        </style>
+        <script>
+
+            function doc() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("box").innerHTML =
+                                this.responseText;
+                    }
+                };
+                xhttp.open("GET", "RetrieveMedicine", true);
+                xhttp.send();
+            }
+        </script>
+    </head>
+    <body>
+        <h2 align=center>SHOW ALL MEDICINES IN STORE <br><br><button align=center type="button" onclick="doc()">CLICK ME</button></h2><br><br>
+        <div id="box">
+
+        </div>
+    </body>
+</html>
