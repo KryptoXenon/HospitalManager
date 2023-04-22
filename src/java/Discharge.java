@@ -76,13 +76,13 @@ public class Discharge extends HttpServlet {
                     e.printStackTrace();
                 }
             }
-            if (c != null) {
-                try {
-                    c.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            }
+//            if (c != null) {
+//                try {
+//                    c.close();
+//                } catch (SQLException e) {
+//                    e.printStackTrace();
+//                }
+//            }
         }
     }
 
